@@ -72,24 +72,7 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nvf": "nvf",
-        "txm-nvim": "txm-nvim"
-      }
-    },
-    "txm-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1783887790,
-        "narHash": "sha256-3wwRJN4jlkha61GstTgHxKQivdrgc5Q/NnvqG7UwqC4=",
-        "owner": "rv178",
-        "repo": "txm.nvim",
-        "rev": "6729cea25ec6febfc12823f2fa30a5567b67d785",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rv178",
-        "repo": "txm.nvim",
-        "type": "github"
+        "nvf": "nvf"
       }
     }
   },

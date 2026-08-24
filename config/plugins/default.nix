@@ -3,7 +3,7 @@
   imports = [
     ./lualine.nix
     ./mini.nix
-    ./extras.nix
+    ./txm.nix
     ./dashboard.nix
   ];
 

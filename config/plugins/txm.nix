@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  txm-nvim,
   isMaximal,
   ...
 }:
@@ -10,11 +9,20 @@
     vim.lazy.plugins = {
       # latex preview
       "txm.nvim" = {
-        package = pkgs.vimUtils.buildVimPlugin {
-          pname = "txm.nvim";
-          version = txm-nvim.shortRev or "unstable";
-          src = txm-nvim;
-        };
+        package =
+          let
+            rev = "6729cea25ec6febfc12823f2fa30a5567b67d785";
+          in
+          pkgs.vimUtils.buildVimPlugin {
+            pname = "txm.nvim";
+            version = "unstable-${builtins.substring 0 7 rev}";
+            src = pkgs.fetchFromGitHub {
+              owner = "rv178";
+              repo = "txm.nvim";
+              inherit rev;
+              hash = "sha256-3wwRJN4jlkha61GstTgHxKQivdrgc5Q/NnvqG7UwqC4=";
+            };
+          };
         cmd = [ "TxmToggle" ];
         keys = [
           {

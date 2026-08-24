@@ -6,11 +6,6 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    txm-nvim = {
-      url = "github:rv178/txm.nvim";
-      flake = false;
-    };
   };
 
   outputs =
@@ -27,7 +22,6 @@
 
           extraSpecialArgs = {
             inherit isMaximal;
-            inherit (inputs) txm-nvim;
           };
         }).neovim;
     in
