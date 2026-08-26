@@ -4,7 +4,7 @@
     ./lualine.nix
     ./mini.nix
     ./txm.nix
-    ./dashboard.nix
+    ./alpha.nix
   ];
 
   config.vim = {
