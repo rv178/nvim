@@ -6,6 +6,8 @@
       formatOnSave = true;
     };
 
+    treesitter.indent.enable = false;
+
     languages = {
       enableTreesitter = true;
 
