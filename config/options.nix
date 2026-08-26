@@ -1,6 +1,7 @@
 { lib, ... }:
 {
   config.vim = {
+    enableLuaLoader = true;
     ui.ui2.enable = true;
 
     viAlias = false;
