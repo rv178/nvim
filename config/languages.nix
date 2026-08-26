@@ -17,7 +17,6 @@
       markdown = {
         enable = true;
         lsp.enable = isMaximal;
-        extensions.markview-nvim.enable = isMaximal;
       };
       clang.enable = isMaximal;
       lua.enable = isMaximal;

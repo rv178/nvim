@@ -64,7 +64,7 @@ Enabled only when `maximal`:
 | Name | Function |
 | --- | --- |
 | [cord.nvim](https://github.com/vyfor/cord.nvim) | Discord presence |
-| [markview.nvim](https://github.com/OXY2DEV/markview.nvim) | Markdown preview |
+| [live-preview.nvim](https://github.com/brianhuster/live-preview.nvim) | Markdown/HTML preview |
 | [typst-preview.nvim](https://github.com/chomosuke/typst-preview.nvim) | Typst preview |
 | [txm.nvim](https://github.com/rv178/txm.nvim) | LaTeX preview |
 
@@ -81,6 +81,9 @@ Enabled only when `maximal`:
 | Normal | `<leader>f` | Format Local buffer |
 | Visual | `<leader>tx` | TXM preview |
 | Normal | `<leader>tt` | TXM toggle |
+| Normal | `<leader>po` | Live preview open |
+| Normal | `<leader>pc` | Live preview close |
+| Normal | `<leader>pp` | Live preview pick |
 | Normal | `<leader>u` | Toggle built-in undotree |
 | Normal | `<leader>re` | Restart config `:restart` |
 | Normal | `<C-s>` | Save buffer |

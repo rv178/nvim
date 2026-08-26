@@ -4,6 +4,7 @@
     ./lualine.nix
     ./mini.nix
     ./txm.nix
+    ./live-preview.nix
     ./alpha.nix
   ];
 
