@@ -1,9 +1,11 @@
-{ isMaximal, ... }:
+{ lib, isMaximal, ... }:
 {
   config.vim = {
     lsp = {
       enable = true;
       formatOnSave = true;
+
+      servers.clangd.cmd = lib.mkForce [ "clangd" ];
     };
 
     treesitter.indent.enable = false;
@@ -20,7 +22,13 @@
         enable = true;
         lsp.enable = isMaximal;
       };
-      clang.enable = isMaximal;
+      clang = {
+        enable = true;
+        lsp = {
+          enable = true;
+          servers = [ "clangd" ];
+        };
+      };
       lua.enable = isMaximal;
       go.enable = isMaximal;
       rust.enable = isMaximal;

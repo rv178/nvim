@@ -3,7 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     nvf = {
-      url = "github:notashelf/nvf";
+      url = "github:rv178/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

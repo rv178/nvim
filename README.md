@@ -23,7 +23,7 @@ nix run .#minimal
 - Bash*
 - Nix*
 - Markdown**
-- Clang (C/C++)
+- Clang (C/C++)*
 - Lua
 - Go
 - Rust

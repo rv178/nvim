@@ -4,11 +4,13 @@
     ./lualine.nix
     ./mini.nix
     ./txm.nix
-    ./live-preview.nix
+    # ./live-preview.nix
     ./alpha.nix
   ];
 
   config.vim = {
+    # live preview
+    utility.preview.livePreview.enable = true;
     # gitsigns (gitgutter alternative)
     git.gitsigns = {
       enable = true;
