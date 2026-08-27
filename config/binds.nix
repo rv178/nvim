@@ -3,7 +3,7 @@
     globals.mapleader = " ";
 
     keymaps = [
-      #leader
+      # leader
       {
         mode = "n";
         key = "<leader>]";
@@ -17,7 +17,7 @@
         desc = "Jump to previous buffer";
       }
 
-      #lsp
+      # lsp
       {
         mode = "n";
         key = "gd";
@@ -40,7 +40,7 @@
         desc = "Show line diagnostics";
       }
 
-      #control
+      # control
       {
         mode = "n";
         key = "<C-s>";
@@ -48,7 +48,7 @@
         desc = "Save buffer";
       }
 
-      #built - in commenting(gc / gcc)
+      # built - in commenting(gc / gcc)
       {
         mode = "n";
         key = "cc";
@@ -64,7 +64,7 @@
         desc = "Comment selection";
       }
 
-      #selection
+      # selection
       {
         mode = "v";
         key = "J";
@@ -100,7 +100,7 @@
         action = "\"+y";
       }
 
-      #movement
+      # movement
       {
         mode = "n";
         key = "n";
@@ -114,7 +114,7 @@
         desc = "Previous search result cursor centered";
       }
 
-      #undotree
+      # undotree
       {
         mode = "n";
         key = "<leader>u";
@@ -127,7 +127,7 @@
         desc = "Toggle built-in undotree";
       }
 
-      #minifiles
+      # minifiles
       {
         mode = "n";
         key = "-";
@@ -135,7 +135,7 @@
         desc = "Toggle mini file explorer";
       }
 
-      #others
+      #  others
       {
         mode = "n";
         key = "Q";
@@ -151,6 +151,26 @@
         key = "<leader>re";
         action = "<cmd>restart<CR>";
         desc = "Restart config :restart";
+      }
+
+      # live-preview.nvim
+      {
+        mode = "n";
+        key = "<leader>po";
+        action = "<cmd>LivePreview start<CR>";
+        desc = "Start live preview";
+      }
+      {
+        mode = "n";
+        key = "<leader>pc";
+        action = "<cmd>LivePreview close<CR>";
+        desc = "Close live preview";
+      }
+      {
+        mode = "n";
+        key = "<leader>pp";
+        action = "<cmd>LivePreview pick<CR>";
+        desc = "Close live preview";
       }
     ];
   };
