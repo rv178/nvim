@@ -10,7 +10,7 @@
 
   config.vim = {
     # live preview
-    utility.preview.livePreview.enable = true;
+    utility.preview.livePreview.enable = isMaximal;
     # gitsigns (gitgutter alternative)
     git.gitsigns = {
       enable = true;
